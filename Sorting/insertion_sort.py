@@ -4,3 +4,15 @@ def insertion_sort(A):                                        # Insertion sort a
         while j > 0 and A[j] < A[j - 1]:                      # O(i) loop over prefix
             A[j - 1], A[j] = A[j], A[j - 1]                   # O(1) swap
             j = j - 1                                         # O(1) decrement j
+
+
+# E.X
+A = [3,4,2,1,5]
+insertion_sort(A)
+print("sorted array: " + str(A))
+
+# OUTPUT
+'''
+sorted array: [1, 2, 3, 4, 5]
+
+'''
